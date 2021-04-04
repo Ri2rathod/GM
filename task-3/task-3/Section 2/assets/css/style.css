@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(228, 228, 228);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 13px;
+}
+
+.image::after {
+    content: '';
+    background: url(../images/dots.png);
+    width: 105px;
+    height: 98px;
+    position: absolute;
+    bottom: 65px;
+    right: -65px;
+    z-index: -1;
+    transform: rotate(169deg);
+}
+
+.image::before {
+    content: '';
+    background: url(../images/dots.png);
+    width: 105px;
+    height: 98px;
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    z-index: -1;
+}
+
+.overlap p{
+    font-size: 10px;
+    color: rgb(39, 37, 37);
+}
+
+.overlap h1 {
+    font-weight: bolder;
+    color: rgb(5, 201, 119);
+}
+
+.overlap{
+    text-align: center;
+    width: 119px;
+    height: 116px;
+    background-color: white;
+    position: relative;
+    top: -56px;
+    left: -48px;
+    border-radius: 20px 20px 20px 0px;
+    box-shadow: 0px 0px px px #000000;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+/* .overlap::before {
+    content: '';
+    width: 117%;
+    height: 36px;
+    position: absolute;
+    bottom: -10%;
+    left: -11%;
+    transform: rotate(-9deg);
+    background-color: orange;
+} */
+
+.right {
+    margin: 0 0 0 80px;
+    width: 37%;
+}
+
+.about h6 {
+    padding-bottom: 12px;
+    font-weight: bolder;
+    color: rgb(5, 201, 119);
+}
+
+.about h1 {
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+.desc {
+    padding-bottom: 18px;
+    font-size: 0.85rem;
+}
+
+.check {
+    font-size: 0.85rem;
+    padding-bottom: 10px;
+}
+
+.fa-check {
+    color: rgb(5, 201, 119);
+}
+
+button {
+    background-color: rgb(5, 201, 119);
+    border-style: none;
+    padding:12px 20px;
+    border-radius: 20px 2px 20px 20px;
+    color: white;
+    margin-top: 13px;
+}
+
+p{
+    color: gray;
+}

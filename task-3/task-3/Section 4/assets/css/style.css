@@ -1,0 +1,167 @@
+:root {
+    --gray: gray;
+    --gold: gold;
+    --blue: navy;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: rgb(231, 231, 231);
+}
+
+.content {
+    margin-top: 25px;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top h5 {
+    padding-bottom: 28px;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+
+.top h5::before {
+    content: '';
+    border: solid 2px gold;
+    height: 33px;
+    width: 12px;
+    position: absolute;
+    margin: -9px 0px 0px 0px;
+    z-index: -1;
+}
+
+.top p {
+    color: var(--gray);
+}
+
+.top h1 {
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.card-1 {
+    width: 10%;
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-1:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.card-1:hover svg {
+    color: var(--gold);
+    transition: 0.5s;
+}
+
+
+
+.card-1 h3 {
+    align-self: center;
+    word-spacing: 10px;
+}
+
+.fa-radiation-alt {
+    margin-left: 1px;
+}
+
+.bottom {
+    margin: 0 35px;
+}
+
+.image {
+    width: 65%;
+}
+
+.last-card {
+    width: 31%;
+    margin-left: 15px;
+    background-color: white;
+    padding: 35px 15px 15px 15px;
+}
+
+.bottom-most {
+    display: flex;
+}
+
+.last-card ul{
+    list-style: none;
+}
+
+.last-card h1 {
+    padding-bottom: 10px;
+}
+
+.last-card p {
+    padding-bottom: 10px;
+    color: var(--gray);
+}
+
+.last-card ul li {
+    padding: 7px 0;
+}
+
+.last-card h5 {
+    padding-top: 7px;
+}
+
+.last-card span {
+    /* padding-left: 10px; */
+    color: white;
+    background-color: var(--gold);
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    margin: 7px 0px 0px 11px;
+}
+
+.fa-check-square {
+    color: var(--gold);
+    margin-right: 8px;
+}
+
+.fa-radiation-alt {
+    margin-left: 15px;
+}
+
+.fa-gas-pump {
+    margin-left: 15px;
+}
+
+.fa-industry {
+    margin-left: 15px;
+}
+
+.fa-truck {
+    margin-right: 7px;
+}
+
+.fa-oil-can {
+    margin-right: 7px;
+}
