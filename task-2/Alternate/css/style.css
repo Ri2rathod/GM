@@ -1,0 +1,126 @@
+:root {
+    --green: rgb(42, 192, 87);
+    --orange: orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(204, 224, 219);
+}
+
+nav {
+    margin: 25px 0 0 100px;
+    display: flex;
+}
+
+.food {
+    color: var(--green);
+}
+
+.sto {
+    color: var(--orange);
+}
+
+.title>a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    display: inline-flex;
+    width: 25%;
+    margin: 0 65px 0 0px;
+}
+
+.menu-bar {
+    width: 75%;
+    display: flex;
+    margin: 5px 0 0 65px;
+}
+
+.menu-bar>ul>li>a:hover {
+    color: var(--green);
+    transition: 0.5s;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.submenu-1 {
+    display: none;
+}
+
+.submenu-1 ul li:hover {
+    background: var(--orange);
+    transition: 0.5s;
+}
+
+.submenu-1 ul li a:hover {
+	color: white;
+}
+
+.submenu-1 {
+    padding-top: 10px;
+}
+
+.menu-bar ul li:hover .submenu-1{
+    display: block;
+    position: absolute;    
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.menu-bar ul li:hover .submenu-1 ul{
+    display: block;
+    /* margin: 6px 6px 6px 6px; */
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-bar ul li:hover .submenu-1 ul li {
+    padding: 13px 40px 13px 7px ;
+    /* margin-right: 100px; */
+}
+
+.fa-angle-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.submenu-2 {
+    display: none;
+}
+
+.shopgrid:hover .submenu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: -225px;
+}
+
+.submenu-2 {
+    /* border-radius: 5px;
+    box-shadow: 0 10px 6px -6px #777; */
+    padding-right: 15px;
+}
+
+.power {
+    background: var(--orange);
+    border-radius: 60px;
+    padding: 0 5px;
+    color: white;
+    margin-left: -4px;
+}
